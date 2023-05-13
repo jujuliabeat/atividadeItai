@@ -1,0 +1,60 @@
+body{
+    font-family: "Inter",sans-serif;
+    color: #fff;
+}
+    
+:root {
+    --primeira-cor: #002f49;
+    --segunda-cor: #fff;
+}
+.container{
+    background: var(--primeira-cor);
+    margin:0%;
+    padding:0%;
+}
+    .container .redes{
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+        gap: 25px
+    }
+
+        .container .redes a {
+            width: 200px;
+            padding: 8px 0px; 
+            text-align: left;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+section.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 25px
+}
+footer{
+    margin: 0%;
+    background-color: var(--primeira-cor);
+}
+    footer .rodape{
+            margin: 3 3 4 2;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 90px 90px 20px;
+            background: var(--primeira-cor);
+            color: #fff;
+    }
+        footer .rodape p{
+            color: #fff;
+            height: 20%;
+            width: 30%;
+            text-align: left;
+        }
+            footer .social{
+                display: flex;
+                flex-direction: column;
+                justify-content:right;
+            }
