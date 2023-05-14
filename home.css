@@ -1,6 +1,5 @@
 body{
     font-family: "Inter",sans-serif;
-    color: #fff;
 }
     
 :root {
@@ -34,8 +33,17 @@ section.redes-sociais{
     align-items: left;
     gap: 25px
 }
+
+main.main2{
+    background-color: var(--primeira-cor);
+}
+#menu-principal{
+    background-color: var(--segunda-cor);
+}
+
 footer{
     margin: 0%;
+    width: 50%;
     background-color: var(--primeira-cor);
 }
     footer .rodape{
@@ -58,3 +66,5 @@ footer{
                 flex-direction: column;
                 justify-content:right;
             }
+
+
