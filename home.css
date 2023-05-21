@@ -1,9 +1,11 @@
 :root {
     --main-bg-color:#002f49;
 }
-* { 
-    font-family: "Inter",sans-serif;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Inter",sans-serif;
 }
 .head {
     display: flex;
@@ -14,6 +16,10 @@
     justify-content: flex-end;
     padding: 0 80px;
 }
+    .head i{
+        width:"25";
+        height:"25";
+    }
 .destaque{
     background-color: var(--main-bg-color);
     color: #fff;
@@ -67,6 +73,7 @@
                         width: 100%;
                         position: absolute;
                     }
+
                 
 .nav{
     position: relative;
@@ -99,6 +106,98 @@ li{
         color: #002f49;
         text-align: center;
     }
+.landing-solutions-background {
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+}
+    .landing-solutions {
+        width: 1400px;
+        height: 600px;
+        border-radius: 10px;
+        background-image: url("https://www.itai.org.br/static/media/solution.b2c4b9f2.png");
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .landing-solution-card {
+        width: 270px;
+        height: 420px;
+        background: #002f49;
+        border-radius: 5px;
+        position: relative;
+    }
+        
+    .solution-card p {
+        padding: 0 15px;
+    }
+.landing-solution-card h4 {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 220px;
+}
+        .landing-solution-card p {
+            font-size: 16px;
+            padding: 0;
+            position: absolute;
+            top: 270px;
+            text-align: justify;
+        }
+    .landing-solution-card img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .landing-solutions .cards-holder {
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        
+        .landing-solutions .cards-holder, .landing-solutions h3, .landing-solutions p {
+            padding: 0 150px;
+        }
+            .landing-solutions h3 {
+                color: #f7c601;
+                position: absolute;
+                top: 30px;
+                font-size: 30px;
+                font-weight: 700;
+            }
+                .landing-solutions p {
+                    color: #fff;
+                    font-size: 18px;
+                    position: absolute;
+                    top: 90px;
+
+                }
+
+footer{
+    background-color: var(--main-bg-color);
+    padding: 90px 90px 20px;
+    color: #fff;
+}
+    .mainFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .social {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        footer i{
+            width: 45%;
+            height: 45%;
+        }
 /* CSS PARA DISPOSITIVOS GRANDES */
 @media screen and (min-width: 1080px) {
     .dropdown:hover .dropdown-menu {
