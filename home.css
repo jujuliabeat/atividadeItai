@@ -1,18 +1,104 @@
 :root {
     --main-bg-color:#002f49;
 }
-
+* { 
+    font-family: "Inter",sans-serif;
+    box-sizing: border-box;
+}
 .head {
-    background: var(--main-bg-color);
-    color: #fff
+    display: flex;
+    background: #002f49;
+    color: #fff;
+    height: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 80px;
 }
 .destaque{
     background-color: var(--main-bg-color);
     color: #fff;
 }
-li{
-    column-gap: 5px;
+    .destaque-texto{
+        flex-direction: column;
+        justify-content: center;
+        background: #002f49;
+        width: 100%;
+        color: #fff;
+        padding: 50px 0 50px 50px;
+    }
+.carousel-inner{
+    width: 320px;
+    height: 420px;
+    padding: 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #000;
+    position: relative;
 }
+    .carousel-item{
+        background-color: #fff;
+        color: var(--main-bg-color);
+    }
+        .carousel-item h3{
+            width: 100%;
+            position: absolute;
+            font-size: 20px;
+            text-align: left;
+            top: 180px;
+
+        }
+            #carouselExampleCaptions{
+                background-color: #fff;
+                padding: 40px 50px;
+            }
+                #carouselExampleCaptions h2{
+                    padding: 15px 30px;
+                    font-size: 33px;
+                    font-weight: 700;
+                    color: #002f49;
+                    text-align: center;
+                }
+                    #carouselExampleCaptions p{
+                        font-size: 16px;
+                        text-align: justify;
+                        top: 290px;
+                        width: 100%;
+                        position: absolute;
+                    }
+                
+.nav{
+    position: relative;
+    padding: 0 80px;
+    display: flex;
+    height: 110px;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+}
+li{
+    column-gap: 40px;
+}
+.container{ 
+    margin: 0%;
+}
+.carousel-item{
+    transition: transform 2s ease, opacity .5s ease-out
+}
+#carouselExampleControlsNoTouching {
+    background: #eee;
+    padding: 40px 50px;
+    text-align: center;
+    color: #000;
+}
+    #carouselExampleControlsNoTouching h2{
+        padding: 15px 30px;
+        font-size: 33px;
+        font-weight: 700;
+        color: #002f49;
+        text-align: center;
+    }
 /* CSS PARA DISPOSITIVOS GRANDES */
 @media screen and (min-width: 1080px) {
     .dropdown:hover .dropdown-menu {
