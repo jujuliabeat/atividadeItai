@@ -31,7 +31,40 @@
         width: 100%;
         color: #fff;
         padding: 50px 0 50px 50px;
+        display: flex;
+        height: 600px;
     }
+        .destaque-texto h2{
+            font-size: 35px;
+            font-weight: 700;
+            padding: 0;
+        }
+        .destaque-texto p{
+            font-size: 20px;
+            line-height: 1.8;
+        }
+        
+.col-5{
+    width: 50%;
+}        
+.col-7{
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+    .col-7 img {
+        object-fit: cover;
+        display: block;
+        height: auto;
+        width: auto;
+        object-position: right;
+    }
+.cta-cut{
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -80px;
+}
 .carousel-inner{
     width: 320px;
     height: 420px;
@@ -77,18 +110,28 @@
                 
 .nav{
     position: relative;
-    padding: 0 80px;
+    padding: 2 80px;
     display: flex;
     height: 110px;
     align-items: center;
     background-color: #fff;
     justify-content: space-between;
+    
 }
 li{
     column-gap: 40px;
+    margin: 0 10px;
+    
 }
+    li a{
+        color:var(--main-bg-color);
+        text-decoration: none;
+        align-items: center;
+        margin: 10px;
+        transition: border 50ms;
+    }
 .container{ 
-    margin: 0%;
+    max-width: 1900px;
 }
 .carousel-item{
     transition: transform 2s ease, opacity .5s ease-out
