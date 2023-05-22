@@ -17,8 +17,7 @@
     padding: 0 80px;
 }
     .head i{
-        width:"25";
-        height:"25";
+        height:90px;
     }
 .destaque{
     background-color: var(--main-bg-color);
@@ -44,6 +43,11 @@
             line-height: 1.8;
         }
         
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .col-5{
     width: 50%;
 }        
@@ -71,14 +75,16 @@
     padding: 0;
     border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
     color: #000;
     position: relative;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
     .carousel-item{
         background-color: #fff;
         color: var(--main-bg-color);
+        transition: transform 2s ease, opacity .5s ease-out
     }
         .carousel-item h3{
             width: 100%;
@@ -88,10 +94,17 @@
             top: 180px;
 
         }
+            .carousel-item.active{
+                justify-content: space-evenly;
+                flex-wrap: nowrap;
+            }
+            
             #carouselExampleCaptions{
                 background-color: #fff;
                 padding: 40px 50px;
+                
             }
+            
                 #carouselExampleCaptions h2{
                     padding: 15px 30px;
                     font-size: 33px;
@@ -106,6 +119,8 @@
                         width: 100%;
                         position: absolute;
                     }
+
+
 
                 
 .nav{
@@ -133,9 +148,8 @@ li{
 .container{ 
     max-width: 1900px;
 }
-.carousel-item{
-    transition: transform 2s ease, opacity .5s ease-out
-}
+    
+
 #carouselExampleControlsNoTouching {
     background: #eee;
     padding: 40px 50px;
@@ -149,6 +163,26 @@ li{
         color: #002f49;
         text-align: center;
     }
+    .slick-next, .slick-prev {
+        font-size: 0;
+        line-height: 0;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        -webkit-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+        transform: translate(0,-50%);
+        color: var(--main-bg-color);
+        border: none;
+        outline: 0;
+        background: 0 0;
+    }
+    .slick-dots, .slick-next, .slick-prev {
+        position: absolute;
+        display: block;
+        padding: 0;
+    }
+
 .landing-solutions-background {
         height: 800px;
         display: flex;
@@ -202,9 +236,35 @@ li{
         align-items: center;
         justify-content: space-between;
     }
+    .landing-solutions .cards-holder p{
+        font-size: 16px;
+        padding: 0 15px;
+        position: absolute;
+        top: 270px;
+        text-align: justify;
+    }
+    .landing-solutions .cards-holder a{
+        color: #f7c601;
+        text-decoration: none;
+        padding: 15px;
+        
+    }
         
         .landing-solutions .cards-holder, .landing-solutions h3, .landing-solutions p {
             padding: 0 150px;
+        }
+        .landing-solutions a{
+            color: #f7c601;
+            text-decoration: none;
+            padding: 0 15px;
+        }
+        .landing-solution-card h4 {
+            color: #fff;
+            font-size: 20px;
+            position: absolute;
+            top: 220px;
+            padding: 0 15px;
+            font-weight: bolder;
         }
             .landing-solutions h3 {
                 color: #f7c601;
@@ -237,13 +297,33 @@ footer{
             justify-content: center;
             align-items: center;
         }
+            .social a{
+                color: #fff;
+                margin: 5px;
+            }
         footer i{
             width: 45%;
             height: 45%;
+        }
+        footer h2 {
+            padding: 0;
+            margin: 0;
+            font-size: 24px;
+            font-weight: 400;
         }
 /* CSS PARA DISPOSITIVOS GRANDES */
 @media screen and (min-width: 1080px) {
     .dropdown:hover .dropdown-menu {
         display: block;
+
+    }
+    .head{
+        display: flex;
+        background: #002f49;
+        color: #fff;
+        height: auto;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 0px;
     }
 }
