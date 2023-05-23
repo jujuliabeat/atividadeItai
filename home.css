@@ -69,35 +69,7 @@
     position: absolute;
     left: -80px;
 }
-.carousel-inner{
-    width: 320px;
-    height: 420px;
-    padding: 0;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row;
-    color: #000;
-    position: relative;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-}
-    .carousel-item{
-        background-color: #fff;
-        color: var(--main-bg-color);
-        transition: transform 2s ease, opacity .5s ease-out
-    }
-        .carousel-item h3{
-            width: 100%;
-            position: absolute;
-            font-size: 20px;
-            text-align: left;
-            top: 180px;
 
-        }
-            .carousel-item.active{
-                justify-content: space-evenly;
-                flex-wrap: nowrap;
-            }
             
             #carouselExampleCaptions{
                 background-color: #fff;
@@ -149,39 +121,6 @@ li{
     max-width: 1900px;
 }
     
-
-#carouselExampleControlsNoTouching {
-    background: #eee;
-    padding: 40px 50px;
-    text-align: center;
-    color: #000;
-}
-    #carouselExampleControlsNoTouching h2{
-        padding: 15px 30px;
-        font-size: 33px;
-        font-weight: 700;
-        color: #002f49;
-        text-align: center;
-    }
-    .slick-next, .slick-prev {
-        font-size: 0;
-        line-height: 0;
-        top: 50%;
-        width: 20px;
-        height: 20px;
-        -webkit-transform: translate(0,-50%);
-        -ms-transform: translate(0,-50%);
-        transform: translate(0,-50%);
-        color: var(--main-bg-color);
-        border: none;
-        outline: 0;
-        background: 0 0;
-    }
-    .slick-dots, .slick-next, .slick-prev {
-        position: absolute;
-        display: block;
-        padding: 0;
-    }
 
 .landing-solutions-background {
         height: 800px;
@@ -311,6 +250,104 @@ footer{
             font-size: 24px;
             font-weight: 400;
         }
+
+
+.noti{
+    border-radius: 10px 10px 0 0;
+}
+.noticias{
+   
+    width: 100%;
+}
+.card-title{
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+    .card-text{
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+    }
+.dropdown-noticias{
+    background-color: #fff;
+    padding: 40px 50px;
+    text-align: center;
+    color: #000;
+}
+    .dropdown-noticias h2 {
+        padding: 10px 15px 30px;
+        font-size: 33px;
+        font-weight: 700;
+        color: #002f49;
+        text-align: center;
+    }
+    .dropdown-cliente{
+        background: #eee;
+        padding: 40px 50px;
+        text-align: center;
+        color: #000;
+    }
+    
+.dropdown-cliente h2{
+        padding: 10px 15px 30px;
+        font-size: 33px;
+        font-weight: 700;
+        color: #002f49;
+}
+.carousel-inner{
+    
+    height: 420px;
+    padding: 0;
+    border-radius: 20px;
+    flex-direction: row;
+    color: #000;
+    position: relative;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.carousel-inner {
+    
+    height: 420px;
+    padding: 0;
+    border-radius: 20px;
+    flex-direction: row;
+    color: #000;
+    position: relative;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+    .carousel-item{
+        color: var(--main-bg-color);
+        transition: transform 2s ease, opacity .5s ease-out
+    }
+        .carousel-item h3{
+            width: 100%;
+            position: absolute;
+            font-size: 20px;
+            text-align: left;
+            top: 180px;
+
+        }
+            .carousel-item.active{
+                justify-content: space-evenly;
+                flex-wrap: nowrap;
+            }
+
+            .carouselExample  .carousel-inner {
+                height: 220px;
+                padding: 0;
+                border-radius: 20px;
+                flex-direction: row;
+                color: #000;
+                position: relative;
+                flex-wrap: nowrap;
+                justify-content: space-evenly;
+            }
 /* CSS PARA DISPOSITIVOS GRANDES */
 @media screen and (min-width: 1080px) {
     .dropdown:hover .dropdown-menu {
